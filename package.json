@@ -1,0 +1,21 @@
+{
+  "name": "youtubecrawl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "dotenv -e .env -- sh -c 'ts-node src/index.ts'"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.0",
+    "playwright": "^1.54.1",
+    "ts-node": "^10.9.2",
+    "dotenv-cli": "^7.4.4"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.15"
+  }
+}

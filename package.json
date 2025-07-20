@@ -6,7 +6,7 @@
   "scripts": {
     "start": "dotenv -e .env -- ts-node src/index.ts",
     "build": "tsc",
-    "run:prd": "node dist/index.js"
+    "run:prd": "dotenv -e .env -- node src/index.js"
   },
   "keywords": [],
   "author": "",

@@ -3,7 +3,7 @@ const userName = process.env.USER_NAME as string;
 const password = process.env.PASSWORD as string;
 const headless = process.env.HEADLESS as string;
 
-(async () => {
+const run = async () => {
   // Launch browser
   const browser: Browser = await chromium.launch({
     headless: headless === "true",
@@ -27,4 +27,6 @@ const headless = process.env.HEADLESS as string;
 
   // Close the browser
   await browser.close();
-})();
+};
+
+run();

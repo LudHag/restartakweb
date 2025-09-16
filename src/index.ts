@@ -25,6 +25,17 @@ const run = async () => {
 
   await page.waitForTimeout(5000);
 
+  await page.goto("https://cp.accu20.com:8443/smb/web/view");
+
+  await page.locator(".pul-list__row-expander").nth(2).click();
+  await page.locator(".pul-list__row-expander").nth(1).click();
+  await page.waitForTimeout(500);
+  await page.locator("a[data-type='hostingTab']").click();
+  await page.click("#buttonIssAppPool");
+  await page.click("#button-recycle");
+
+  await page.waitForTimeout(5000);
+
   // Close the browser
   await browser.close();
 };
